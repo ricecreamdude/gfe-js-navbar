@@ -26,8 +26,16 @@
           flex-grow: 1
         }
 
-        .icon {
-          justify-content: center;
+        .nav-links {
+          flex-grow: 3;
+          align-items: center;
+        }
+
+        .nav-link {
+          font-size: larger;
+          padding: 0 24px
+
+
         }
 
         .aside {
@@ -35,8 +43,11 @@
           align-items: center;
         }
 
+
+
         .icon {
-          padding: 0 0 0 16px ;
+          padding: 0 0 0 20px;
+          justify-content: center;
         }
     
     </style>
@@ -45,6 +56,12 @@
     <div id="navbar" class="navbar flex container mx-auto px-6 py-10">
       <div class="logo-container">
         <img class="md:h-16 h-12" src="./img/stylenest.svg">
+      </div>
+      <div class="flex nav-links">
+        <ul class="flex">
+          <li class="nav-link">Shop All</li>
+          <li class="nav-link">Latest Arrivals</li>
+        </ul>
       </div>
       <div class="flex aside">
         <img class="h-8 md:h-10 icon" src="./img/shopping-cart.svg">
