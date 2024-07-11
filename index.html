@@ -20,10 +20,39 @@
 
     <link rel="icon" href="img/favicon.ico" sizes="any" />
     <style>
-      /* You may write styles inside this <style> tag or within `css/style.css`. */
+        /* You may write styles inside this <style> tag or within `css/style.css`. */
+        
+        .logo-container {
+          flex-grow: 1
+        }
+
+        .icon {
+          justify-content: center;
+        }
+
+        .aside {
+          display: flex;
+          align-items: center;
+        }
+
+        .icon {
+          padding: 0 0 0 16px ;
+        }
+    
     </style>
   </head>
   <body>
+    <div id="navbar" class="navbar flex container mx-auto px-6 py-10">
+      <div class="logo-container">
+        <img class="md:h-16 h-12" src="./img/stylenest.svg">
+      </div>
+      <div class="flex aside">
+        <img class="h-8 md:h-10 icon" src="./img/shopping-cart.svg">
+        <img class="h-10 md:h-12 icon" src="./img/bars-3.svg">
+      </div><!-- logo -->
+    </div>
+
+    </div>
     <!-- Add your site or application content here -->
     <h1 class="text-5xl text-center font-semibold pt-20">
       Hello world! Write your content here.
